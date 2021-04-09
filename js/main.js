@@ -8,3 +8,5 @@ new ElastiStack( element, {
 	// callback
 	onUpdateStack : function( current ) { return false; }
 } );
+
+$('#da-thumbs > li').hoverdir();
