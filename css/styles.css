@@ -96,3 +96,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
 }
+
+
+.character {
+	color: blue;
+}
