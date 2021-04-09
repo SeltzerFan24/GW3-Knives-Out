@@ -7,7 +7,8 @@
 
 		<title>Knives Out | Characters</title>
 
-		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+		<link type="text/css" rel="stylesheet" href="css/normalize.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,7 +17,7 @@
 		<!--[if lt IE 9]>
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
-
+		<script src="js/modernizr.custom.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 
@@ -52,7 +53,7 @@
 		</header>
 
 		<section class="characters_hero">
-			<img src="images/familytree.png" alt="black tree" />
+			<img src="images/familytree.png" alt="black tree" width="600px"/>
 			<img src="images/dog_2.png" alt="black dog facing right" />
 			<img src="images/dog_1.png" alt="black dog facing left" />
 		</section>
@@ -70,7 +71,7 @@
 				<li><img src="images/char8.png" alt="Walt Thrombey"/><h5>Walt Thrombey</h5></li>
 				<li><img src="images/char9.png" alt="Hugh Random Drysdale"/><h5>Hugh Random Drysdale</h5></li>
 				<li><img src="images/char10.png" alt="Fran"/><h5>Fran</h5></li>
-				<li><img src="images/char11.png" alt="Detective Lieutenant Elliot"/><h5>Detective Lieutenant Elliot</h5></li>
+				<li><img src="images/char11.png" alt="Lieutenant Elliot"/><h5>Lieutenant Elliot</h5></li>
 				<li><img src="images/char12.png" alt="Meg Thrombey"/><h5>Meg Thrombey</h5></li>
 				<li><img src="images/char13.png" alt="Alan Stevens"/><h5>Alan Stevens</h5></li>
 				<li><img src="images/char14.png" alt="Donna Thrombey"/><h5>Donna Thrombey</h5></li>
@@ -92,6 +93,11 @@
 		</footer>
 
 		<script src="js/hamburger.js"></script>
+		<script src="js/draggabilly.pkgd.min.js"></script>
+		<script src="js/elastiStack.js"></script>
+		<script>
+			new ElastiStack( document.getElementById( 'elasticstack' ) );
+		</script>
     <script src="js/main.js"></script>
 
 	</body>
