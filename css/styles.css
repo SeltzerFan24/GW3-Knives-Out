@@ -9,6 +9,94 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+@font-face {
+	font-family: karimun;
+	src: url('../fonts/Karimun.ttf');
+}
+
+header {
+	background: white;
+}
+
+footer {
+	background: white;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.nav_knife_container, .desktop-menu {
+	display: none;
+}
+
+.knife_circle {
+	opacity: .06;
+}
+
+h1, h2, h3 {
+	font-family: karimun, serif;
+}
+
+p {
+	font-family: orator-std, monospace;
+	color: white;
+}
+
+/**font-family: orator-std, monospace;
+
+font-weight: 400;
+
+font-style: normal; */
+
+/*
+font-family: karimun, serif;
+
+/**************Hamburger Menu***************/
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-family: orator-std, monospace; font-size: 1em; width:100%; background:#f1f1f1;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+.glyphicon-home{
+  color:white;
+  font-size:1.5em;
+  margin-top:5px;
+  margin:0 auto;
+}
 
 /***************ElastiStack*/
 *,
@@ -96,11 +184,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
 }
 
-
-.character {
-	color: blue;
-}
-
 /***************** Set Design Hover ****************/
 
 .da-thumbs {
@@ -146,13 +229,213 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
 }
 
-/***************** Homepage Styles ****************/
+/***************** Homepage Mobile Styles ****************/
+
+.index_body {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(71,31,26,1) 77%);
+}
+
+header {
+	padding-bottom: 30%;
+}
+
+.black_logo {
+	max-width: 30%;
+	margin: 4% 0 0 4%;
+}
 
 
+.home_dog_left {
+	transform: translate(10%, -775%);
+	max-width: 20%;
+}
 
-/***************** Character Page Styles ****************/
+.magnify_poster {
+	max-width: 66%;
+	transform: translate(-5%, -28%);
+}
 
+.magnify_text {
+	display: none;
+}
+.magnify_white {
+	display: none;
+}
 
+.mug {
+	max-width: 16%;
+	transform: translate(31%, -512%) rotate(-12deg);
+}
 
+.morphine {
+	max-width: 20%;
+	transform: translate(267%, -412%) rotate(20deg);
+}
 
-/***************** Set Design Styles ****************/
+.go {
+	max-width: 27%;
+	transform: translate(47%, -368%);
+}
+
+.results {
+	max-width: 20%;
+	transform: translate(-172%, -177%);
+}
+
+.home_dog_right{
+	max-width: 32%;
+	transform: translate(190%, -205%);
+}
+
+.home_article {
+	margin-top: -113px;
+}
+
+.kc_one {
+	max-width: 70%;
+	position: absolute;
+	transform: translate(44%, 0%);
+}
+
+.home_article{
+	margin: 0 5% 5% 5%;
+	transform: translateY(-10%);
+}
+
+.home_article h1 {
+	text-align: center;
+	color: white;
+  font-size: 4rem;
+}
+
+.home_article p {
+	font-size: 1rem;
+	text-indent: 5rem
+}
+.kc_two {
+	max-width: 70%;
+	position: absolute;
+	transform: translate(5%, -14%);
+}
+
+.home_h_two {
+	text-align: center;
+  font-size: 3rem;
+  color: #834432;
+	position: relative;
+}
+
+.gold_logo_container {
+	text-align: center;
+	margin-bottom: 40px;
+}
+.gold_logo {
+	max-width: 80%;
+}
+
+.group_pics_container {
+		text-align: center;
+}
+
+.group_pics_container img {
+	max-width: 70%;
+	margin-bottom: 20px;
+	position: relative;
+}
+footer img {
+	max-width: 100%;
+}
+/***************** Character Mobile Styles ****************/
+
+.characters_body {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(31,62,48,1) 42%);
+}
+
+.tree {
+	max-width: 50%;
+	transform: translate(45%, -72%);
+}
+
+.char_left_dog {
+	max-width: 20%;
+  transform: translate(-56%, -417%);
+}
+
+.char_right_dog {
+	max-width: 16%;
+	transform: translate(471%, -537%);
+
+}
+
+.characters_hero h2 {
+	color: white;
+	font-size: 11vw;
+	text-align: center;
+  transform: translateY(-250%);
+}
+
+.characters_main {
+	transform: translateY(-5%);
+}
+
+.character_info {
+	margin-top: 27%;
+}
+
+.characters_main p {
+	font-size: 1rem;
+	margin: 0 5% 0 5%;
+	text-indent: 5rem;
+}
+
+.characters_main p span {
+	font-style: italic;
+}
+/***************** Set Mobile Styles ****************/
+.set_design_body {
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(132,87,0,1) 40%);
+}
+
+.mansion {
+	max-width: 74%;
+	transform: translate(17%, -65%);
+
+}
+
+.set_dog_left {
+	max-width: 10%;
+	transform: translate(-400%, -542%);
+}
+
+.set_dog_right {
+	max-width: 10%;
+	transform: translate(-381%, -443%);
+}
+.desktop_set_design {
+	display: none;
+}
+
+.design_hero h2 {
+	text-align: center;
+	color: white;
+	font-size: 21vw;
+	transform: translateY(-168%);
+}
+
+.design_hero p {
+	text-indent: 5rem;
+	font-size: 1rem;
+	margin: 0 5% 0 5%;
+	transform: translateY(-45%);
+}
+.mobile_set_design {
+	transform: translateY(-2%);
+	text-align: center;
+}
+.mobile_set_design img {
+	max-width: 85%;
+	margin-bottom: 5%;
+}
