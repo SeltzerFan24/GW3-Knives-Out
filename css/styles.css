@@ -48,58 +48,7 @@ font-style: normal; */
 /*
 font-family: karimun, serif;
 
-/**************Hamburger Menu***************
-.hamburger{
-  background:none;
-  position:absolute;
-  top:0;
-  right:0;
-  line-height:45px;
-  padding:5px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:1.4em;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.cross{
-  background:none;
-  position:absolute;
-  top:0px;
-  right:0;
-  padding:7px 15px 0px 15px;
-  color:#999;
-  border:0;
-  font-size:3em;
-  line-height:65px;
-  font-weight:bold;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-}
-.menu{z-index:1000000; font-family: orator-std, monospace; font-size: 1em; width:100%; background:#f1f1f1;  position:absolute; text-align:center;}
-.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
-.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
-.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
-.menu ul li a:hover {  color: #666; text-decoration:none;}
-.menu a{text-decoration:none; color:#666;}
-.menu a:hover{text-decoration:none; color:#666;}
-
-.glyphicon-home{
-  color:white;
-  font-size:1.5em;
-  margin-top:5px;
-  margin:0 auto;
-}
-*/
-
-
-
-
-
+/**************Hamburger Menu***************/
 
 .burger-wrapper {
   cursor: pointer;
@@ -274,9 +223,13 @@ font-family: karimun, serif;
 	position: relative;
 	margin: 20px auto;
 	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
 }
 .da-thumbs li {
-	float: left;
+	min-width: 0;
+	min-height: 0;
+	overflow: hidden;
 	margin: 5px;
 	background: #fff;
 	padding: 8px;
@@ -287,6 +240,7 @@ font-family: karimun, serif;
 .da-thumbs li a img {
 	display: block;
 	position: relative;
+		width: 100%;
 }
 .da-thumbs li a {
 	overflow: hidden;
@@ -502,7 +456,7 @@ footer img {
 	max-width: 10%;
 	transform: translate(-382%, -443%);
 }
-.desktop_set_design {
+.desktop_set_design, .desktop_set_design_two {
 	display: none;
 }
 
@@ -647,6 +601,10 @@ footer img {
 }
 
 @media (min-width: 1000px) {
+	header {
+		padding-bottom: 240px;
+	}
+
 	#menyAvPaa, #burger, #meny {
 		display: none;
 	}
@@ -699,6 +657,11 @@ footer img {
 		color: #203f31;
 	}
 
+	.design_hero_container {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
 	.mansion {
 	    max-width: 500px;
 			transform: translate(17%, -60%);
@@ -733,23 +696,64 @@ footer img {
 	display: none;
 }
 
+.design_main {
+	margin: -30% 0 40% 0;
+}
+
 .desktop_set_design {
 	display: contents;
 }
+
 }
 
+@media (min-width: 1200px) {
+	.design_main {
+	    margin: -20% 0 40% 0;
+	}
+}
 
+@media (min-width: 1500px) {
+	.design_main {
+    margin: -20% 0 30% 0;
+}
+}
 
+@media (min-width: 1700px) {
 
+	.design_main {
+	    margin: -15% 0 30% 0;
+	}
 
+	footer img {
+	    max-width: 374px;
+	}
 
+}
 
+@media (min-width: 1900px) {
 
+	.design_main {
+    margin: -15% 0 70% 0;
+}
 
+	.desktop_set_design {
+		display: none;
+	}
 
+	.desktop_set_design_two {
+		display: contents;
+	}
 
+	#da-thumbs{
+		width: auto;
+		justify-content: center;
+	}
 
-
+	.desktop_content {
+    max-width: 1900px;
+    margin: 0 auto;
+}
+}
 /***********Animations****************/
 
 .slide-in-right {
