@@ -289,13 +289,19 @@ header {
 .magnify_poster {
 	max-width: 66%;
 	transform: translate(-5%, -28%);
+	z-index: 3;
+	position: relative;
 }
 
 .magnify_text {
 	display: none;
 }
+
 .magnify_white {
-	display: none;
+    position: absolute;
+    max-width: 66%;
+    transform: translate(-105%, -28%);
+		z-index: 1;
 }
 
 .mug {
@@ -349,6 +355,9 @@ header {
 	text-indent: 5rem
 }
 
+.rian {
+	display: none;
+}
 .get_to_know {
 	transform: translateY(1%);
 }
@@ -411,6 +420,12 @@ footer img {
 
 }
 
+.kc_one_char {
+    max-width: 70%;
+    position: absolute;
+    transform: translate(35%, 5%);
+}
+
 .characters_hero h2 {
 	color: white;
 	font-size: 11vw;
@@ -435,6 +450,25 @@ footer img {
 .characters_main p span {
 	font-style: italic;
 }
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
 /***************** Set Mobile Styles ****************/
 .set_design_body {
 	background: rgb(0,0,0);
@@ -516,6 +550,12 @@ footer img {
 
 @media (min-width: 700px) {
 
+	.group_pics_container img {
+		max-width: 516px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+
 	.set_dog_left {
 	    transform: translate(-390%, -542%);
 	}
@@ -540,6 +580,10 @@ footer img {
     transform: translateY(-5%);
 	}
 
+	.kc_one_char {
+	    max-width: 50%;
+	    transform: translate(92%, 10%);
+	}
 	.characters_main p {
     font-size: 1.4rem;
 	}
@@ -657,6 +701,129 @@ footer img {
 		color: #203f31;
 	}
 
+	.home_hero_container {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+
+	.home_dog_left {
+	    transform: translate(10%, -686%);
+	    max-width: 14%;
+	}
+
+	.magnify_poster {
+    max-width: 42%;
+    transform: translate(-15%, -28%);
+}
+
+.home_text_container {
+    max-width: 28%;
+    text-align: center;
+    transform: translate(69%, -475%);
+		position: relative;
+		z-index: 2;
+}
+
+.magnify_text {
+	display: contents;
+	color: black;
+	font-size: .9rem;
+}
+
+.magnify_white {
+	max-width: 420px;
+transform: translate(19%, -153%);
+}
+
+.mug {
+    max-width: 11%;
+    transform: translate(31%, -652%) rotate(-12deg);
+}
+
+.morphine {
+    max-width: 14%;
+    transform: translate(297%, -632%) rotate(20deg);
+}
+
+.go {
+    max-width: 25%;
+    transform: translate(187%, -628%);
+}
+
+.results {
+    max-width: 17%;
+    transform: translate(-70%, -377%);
+}
+
+.home_dog_right {
+    max-width: 32%;
+    transform: translate(1%, -335%);
+}
+
+.home_article {
+    transform: translateY(-40%);
+}
+
+.kc_one {
+    max-width: 35%;
+    position: absolute;
+    transform: translate(195%, -26%);
+}
+.home_p {
+	width: 50%;
+
+}
+.rian {
+	display: contents;
+}
+
+.rian img {
+	max-width: 40%;
+	align-self: flex-start;
+	position: relative;
+}
+
+.home_flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.get_to_know {
+    margin-top: -40%;
+}
+
+
+.kc_two {
+    max-width: 35%;
+    position: absolute;
+}
+
+.home_h_two {
+    text-align: left;
+    font-size: 7rem;
+    position: relative;
+    left: 10%;
+}
+
+.gold_logo {
+    max-width: 50%;
+}
+
+.group_pics_container {
+	display: flex;
+	justify-content: space-around;
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.group_pics_container img {
+    max-width: 27%;
+    margin-bottom: 130px;
+    position: relative;
+}
+
+
 	.characters_hero_container {
 		max-width: 1000px;
 		margin: 0 auto;
@@ -736,7 +903,19 @@ footer img {
 .desktop_set_design {
 	display: contents;
 }
+.magnify_poster:hover {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}​
+}
 
+
+@media (min-width: 1150px) {
+	.get_to_know {
+    margin-top: -20%;
+}
 }
 
 @media (min-width: 1200px) {
@@ -765,6 +944,11 @@ footer img {
 	.design_main {
     margin: -20% 0 30% 0;
 }
+
+	.home_desktop_content {
+		max-width: 1500px;
+		margin: 0 auto;
+	}
 
 		.char_desktop_content {
 			max-width: 1500px;
