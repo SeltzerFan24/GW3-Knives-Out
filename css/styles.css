@@ -440,6 +440,9 @@ footer img {
 	font-style: italic;
 }
 
+.whodunnit:hover {
+	color: red;
+}
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -673,9 +676,10 @@ footer img {
 	.nav_knife_container {
 	    display: flex;
 	    justify-content: space-between;
+			align-items: flex-start;
 	    position: absolute;
 	    right: 8%;
-	    top: 6.5%;
+			top: 8%;
 	    width: 50%;
 	}
 
@@ -684,6 +688,7 @@ footer img {
 		min-height: 0;
 		overflow: hidden;
 		width: 120px;
+		height: auto;
 	}
 
 	.desktop-menu li a{
@@ -818,12 +823,14 @@ transform: translate(19%, -153%);
 	justify-content: space-around;
 	max-width: 80%;
 	margin: 0 auto;
+	align-items: flex-start;
 }
 
 .group_pics_container img {
     max-width: 27%;
     margin-bottom: 130px;
     position: relative;
+		height: auto;
 }
 
 
@@ -982,6 +989,11 @@ transform: translate(19%, -153%);
 /*********************Media Query at 1900px***********************/
 
 @media (min-width: 1900px) {
+
+	.nav_knife_container {
+	  top: 6.5%;
+		right: 7%;
+	}
 
 	.design_main {
     margin: -15% 0 70% 0;
