@@ -443,6 +443,7 @@ footer img {
 .whodunnit:hover {
 	color: red;
 }
+
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -1051,8 +1052,6 @@ transform: translate(19%, -153%);
   -o-animation: fadeIn 5s;
   -ms-animation: fadeIn 5s;
 }
-
-
 
 
 @-webkit-keyframes slide-in-right {
